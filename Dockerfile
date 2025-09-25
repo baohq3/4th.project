@@ -1,6 +1,10 @@
 FROM node:18-alpine
 WORKDIR /app
 RUN npm install -g npm@9
+
+# Liệt kê file trong thư mục /app để kiểm tra
+RUN ls -al /app
+
 #COPY package*.json .
 #COPY packages ./packages
 #COPY themes ./themes
